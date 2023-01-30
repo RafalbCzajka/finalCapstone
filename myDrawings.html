@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Drawings</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/a3cd78280a.js" crossorigin="anonymous"></script>
+    <style>
+        @media (max-width: 1000px) {
+            .flex_container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body onload="loadPage()">
+    <header>
+        <div id="headerContent">
+            <h1>My Inktober 2022 Drawings</h1>
+            <nav>
+                <ul id="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="myDrawings.html">My Drawings</a></li>
+                    <li><a href="othersWork.html">Others Work</a></li>
+                    <li><a href="saveForLater.html">Bookmarks</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>My drawings</h2>
+        <p>Unfortunately I wasn't able to complete the challenge but below are the digital drawings that I did create in the first week of the Inktober 2022 drawing challenge. I created these images in Adobe Photoshop by drawing with a mouse as I didn't have access to a drawing tablet, despite these limitations I am happy with how I improved throughout the challenge.</p>
+        <p>The days of the challenge that I did manage to complete include:</p>
+        <ol>
+            <li>Gargoyle </li>
+            <li>Scurry</li>
+            <li>Bat</li>
+            <li>Scallop</li>
+            <li>Flame</li>
+            <li>Bouquet</li>
+        </ol>
+        <p>As an additional rule to the challenge I also tried to use various techniques to include a 'among us' character in each drawing.</p>
+        <p>Please check the checkbox following an image to bookmark the image and see it in full size on the Bookmarks page.</p>
+    </main>
+    <div class="flex_container">
+        <div class="flex_item"><img src="images/1 Gargoyle.png"></div>
+        <div>
+            <input type="checkbox" class="bookmark" id="cbImage1"> <br>
+            <i class="fa-regular fa-heart" onclick="likeButton(this)"></i>
+        </div>
+        <div class="flex_item"><img src="images/2 Scurry.png"></div>
+        <div>
+            <input type="checkbox" class="bookmark" id="cbImage2"> <br>
+            <i class="fa-regular fa-heart" onclick="likeButton(this)"></i>
+        </div>
+        <div class="flex_item"><img src="images/3 Bat.png"></div>
+        <div>
+            <input type="checkbox" class="bookmark" id="cbImage3"> <br>
+            <i class="fa-regular fa-heart" onclick="likeButton(this)"></i>
+        </div>
+        <div class="flex_item"><img src="images/4 Scallop.png"></div>
+        <div>
+            <input type="checkbox" class="bookmark" id="cbImage4"> <br>
+            <i class="fa-regular fa-heart" onclick="likeButton(this)"></i>
+        </div>
+        <div class="flex_item"><img src="images/5 Flame.png"></div>
+        <div>
+            <input type="checkbox" class="bookmark" id="cbImage5"> <br>
+            <i class="fa-regular fa-heart" onclick="likeButton(this)"></i>
+        </div>
+        <div class="flex_item"><img src="images/6 Bouquet.png"></div>
+        <div>
+            <input type="checkbox" class="bookmark" id="cbImage6"> <br>
+            <i class="fa-regular fa-heart" onclick="likeButton(this)"></i>
+        </div>
+        <div>
+            <input type="button" id="btnSaveBookmarks" onclick="saveBookmark()" value="Save Bookmarks">
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

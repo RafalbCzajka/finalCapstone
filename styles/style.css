@@ -1,0 +1,201 @@
+/*CSS for Header section (h1 and navigation bar)*/
+
+header {
+    background:rgba(3, 57, 108, 0.3);
+    background-image: linear-gradient(rgba(3, 57, 108, 0.7), rgba(3, 57, 108, 1)), url(../images/paper.jpeg);
+    /*background-color: #03396c; original flat colour*/
+    width: 100%;
+    padding: 2px 0px;
+    margin: 0;
+    top: 0;
+    border-color: #022d56;
+    border-style: none none solid none;
+}
+
+#headerContent {
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    text-shadow: 3px 3px black;
+    font-size: 35px;
+    font-family: Verdana;
+}
+
+#nav_links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#nav_links li {
+    display: inline-block
+}
+
+#nav_links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Georgia;
+  }
+
+  #nav_links li a:hover{
+    background-color: #022d56;
+}
+
+/*CSS for the body of the page */
+
+body {
+    background-color: #242225;
+    margin: 0;
+}
+
+main {
+    margin: 15px;
+}
+
+section {
+    margin: 15px;
+}
+
+.content_block {
+    background-color: #022d56;
+    background-image: url(../images/rice-paper-2.png);
+    border: #022d56 solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    margin: 15px;
+    text-align: right;
+}
+
+h2 {
+    color: white;
+    font-size: 25px;
+    font-family: Tahoma;
+}
+
+p, li {
+    color: white;
+    font-size: 20px;
+    font-family: Tahoma;
+}
+
+a:link {
+    color: #8dbdda;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #65a3cb;
+    text-decoration: underline;
+
+}
+
+a:hover {
+    color: #daa072;
+}
+
+table {
+    background-color: #4e7498;
+    background-image: url("../images/rice-paper-2.png");
+    padding: 10px;
+    border-radius: 15px;
+}
+
+caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: left;
+}
+
+td, th {
+    font-size: 50px;
+    padding: 10px 5px;
+    font-family: Times New Roman;
+    color: darkblue;
+    text-shadow: 1px 1px black;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*CSS for the flexbox containing images on the 'My Drawings' page*/
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #4e7498;
+    background-image: url("../images/rice-paper-2.png");
+}
+
+.flex_item {
+    text-align: center;
+    padding: 0.5vh;
+    flex: 1 0 30%;
+}
+
+.flex_item img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+/*CSS for the quote hover*/
+.quote_effect {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.quote_effect:hover{
+    opacity: 1;
+}
+
+#quote {
+    font-size: 25px;
+    line-height: 1.2;
+    position: relative;
+}
+
+#quote_author {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1.2px;
+}

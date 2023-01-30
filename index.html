@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inktober 2022</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body onload="loadIndex()">
+    <!--Header section containing the main heading and navigation bar-->
+    <header>
+        <div id="headerContent">
+            <h1>Inktober 2022</h1>
+            <nav>
+                <ul id="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="myDrawings.html">My Drawings</a></li>
+                    <li><a href="othersWork.html">Others Work</a></li>
+                    <li><a href="saveForLater.html">Bookmarks</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Main section containing the content of the page.-->
+    <main>
+        <h2>What is Inktober?</h2>
+        <p>Inktober is a month long art challenge created by artist <a href="https://www.mrjakeparker.com/" target="_blank">Jake Parker</a> that is focused on improving skill and developing positive drawing habits. Every day for the month of October anyone participating in the Inktober challenge creates a ink drawing or digital artwork related to a prompt for each day. In 2022 I made my first attempt at this daily drawing challenge and I have created this website to showcase my own drawings. Unfortunately as this was my first attempt at something like this, I wasn't able to complete the whole challenge, but I enjoyed taking part and trying out different techniques each day to try and improve my skills.</p>
+        <h2>Inktober 2022 prompts:</h2>
+        <table class="center">
+            <caption>
+                October 2022
+            </caption>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1: Gargoyle</td>
+                </tr>
+                <tr>
+                    <td>2: Scurry</td>
+                    <td>3: Bat</td>
+                    <td>4: Scallop</td>
+                    <td>5: Flame</td>
+                    <td>6: Bouquet</td>
+                    <td>7: Trip</td>
+                    <td>8: Match</td>
+                </tr>
+                <tr>
+                    <td>9: Nest</td>
+                    <td>10: Crabby</td>
+                    <td>11: Eagle</td>
+                    <td>12: Forget</td>
+                    <td>13: Kind</td>
+                    <td>14: Empty</td>
+                    <td>15: Armadillo</td>
+                </tr>
+                <tr>
+                    <td>16: Fowl</td>
+                    <td>17: Salty</td>
+                    <td>18: Scrape</td>
+                    <td>19: Ponytail</td>
+                    <td>20: Bluff</td>
+                    <td>21: Bad Dog</td>
+                    <td>22: Heist</td>
+                </tr>
+                <tr>
+                    <td>23: Booger</td>
+                    <td>24: Fairy</td>
+                    <td>25: Tempting</td>
+                    <td>26: Ego</td>
+                    <td>27: Snack</td>
+                    <td>28: Camping</td>
+                    <td>29: Uh-Oh</td>
+                </tr>
+                <tr>
+                    <td>30: Gear</td>
+                    <td>31: Farm</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <section class="content_block">
+        <h2>Why did I take part?</h2>
+        <p>Despite not being an artist myself, I decided to take part in Inktober 2022 for multiple reasons, the main reason was because at the time it sounded like a fun idea as I have never attempted any daily challenge of this nature before and I was curious how far I would be able to go. Another reason however was because I enjoy developing skills and I know that daily practice was a very effective method of doing this, by trying it on something I wasn't good at to begin with I gave myself more room to learn and I could see results of daily practice faster. This experience also taught me about how time consuming creating art can be.</p>
+    </section>
+    <section>
+        <h2>Comments / Contact me</h2>
+        <div id="comments">
+
+        </div>
+        <form>
+            <label for="txtName">Name:</label>
+            <br>
+            <input type="text" id="txtName">
+            <br>
+            <label for="txtEmail">Email:</label>
+            <br>
+            <input type="text" id="txtEmail">
+            <br>
+            <label for="txtComment">Comment:</label>
+            <br>
+            <textarea id="txtComment" cols="50" rows="4"></textarea>
+            <br>
+            <input type="button" value="Submit" onclick="saveComment()">
+        </form>
+    </section>
+    <footer>
+        <p>This website uses cookies. (it doesn't) do you agree?</p>
+        <form>
+            <input type="radio" id="btn_yes" name="cookies_accepted" value="Yes">
+            <label for="btn_yes">Yes</label>
+            <input type="radio" id="btn_no" name="cookies_accepted" value="No">
+            <label for="btn_no">No</label>
+            <input type="submit" value="Submit">
+        </form>
+        <script src="./scripts/script.js"></script>
+    </footer>
+</body>
+</html>
